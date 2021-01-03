@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Covid</string>
+    <string name="error_access_api">Error while accessing API</string>
+    <string name="kasus_positif">Kasus Positif</string>
+    <string name="kasus_sembuh">Kasus Sembuh</string>
+    <string name="background_image_cardview">Background Image CardView</string>
+    <string name="kasus_meninggal">Kasus Meninggal</string>
+    <string name="covid_19">Covid-19</string>
+</resources>

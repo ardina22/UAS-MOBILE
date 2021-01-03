@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item_note"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:padding="24dp"
+    app:cardMaxElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/covid"
+        android:scaleType="fitXY"
+        android:alpha="0.2"
+        android:contentDescription="@string/background_image_cardview" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_provinsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Provinsi" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/kasus_positif"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_provinsi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_provinsi" />
+
+        <TextView
+            android:id="@+id/tv_kasus_positif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_provinsi"
+            tools:text='18000 kasus' />
+
+        <TextView
+            android:id="@+id/tv_title_kasus_sembuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/kasus_sembuh"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/tv_kasus_sembuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_kasus_positif"
+            app:layout_constraintStart_toStartOf="@+id/tv_kasus_positif"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kasus_positif"
+            tools:text='18000 kasus' />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/kasus_meninggal"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_kasus_sembuh"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_kasus_sembuh" />
+
+        <TextView
+            android:id="@+id/tv_kasus_meninggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_kasus_sembuh"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_kasus_sembuh"
+            app:layout_constraintStart_toStartOf="@+id/tv_kasus_sembuh"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kasus_sembuh"
+            tools:text='18000 kasus' />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
